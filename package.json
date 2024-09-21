@@ -1,0 +1,71 @@
+{
+  "name": "rest-api-framework-ts",
+  "version": "1.0.0",
+  "description": "REST API Framework with TypeScript",
+  "type": "module",
+  "sideEffects": false,
+  "main": "index.ts",
+  "scripts": {
+    "test": "mocha --config .mocharc.cjs -r './src/hooks/setupTeardown.hooks.ts'",
+    "watch": "mocha --watch --esm",
+    "test1": "ts-mocha -p tsconfig.json -r tsconfig-paths/register -r ts-node/register",
+    "test2": "mocha -r ts-node/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersinghrajkr/rest-api-framework-ts.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Mocha",
+    "Supertest"
+  ],
+  "author": "Raj Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ersinghrajkr/rest-api-framework-ts/issues"
+  },
+  "homepage": "https://github.com/ersinghrajkr/rest-api-framework-ts#readme",
+  "devDependencies": {
+    "@elastic/elasticsearch": "^8.15.0",
+    "@faker-js/faker": "^9.0.0",
+    "@types/chai": "^4.3.19",
+    "@types/expect": "^1.20.4",
+    "@types/mocha": "^10.0.7",
+    "@types/mochawesome": "^6.2.4",
+    "@types/node": "^22.5.4",
+    "@types/oracledb": "^6.5.1",
+    "@types/supertest": "^6.0.2",
+    "artillery": "^2.0.20",
+    "async-retry": "^1.3.3",
+    "axios": "^1.7.7",
+    "chai": "^5.1.1",
+    "chai-http": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "elasticsearch": "^16.7.3",
+    "env-cmd": "^10.1.0",
+    "i18n-iso-countries": "^7.12.0",
+    "kafkajs": "^2.2.4",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "mongoose": "^8.6.1",
+    "mysql2": "^3.11.0",
+    "nock": "^13.5.5",
+    "nodemon": "^3.1.4",
+    "oracledb": "^6.6.0",
+    "pino": "^9.4.0",
+    "superagent-node-http-timings": "^1.0.1",
+    "supertest": "^7.0.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.2",
+    "winston": "^3.14.2"
+  },
+  "dependencies": {
+    "rest-api-framework-ts": "file:"
+  }
+}
